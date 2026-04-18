@@ -1,0 +1,44 @@
+# ============================================================
+#  scilit-agent — .gitignore
+# ============================================================
+
+# ── Secrets — NEVER commit these ────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ── Generated data directories ───────────────────────────────
+data/
+wiki/
+
+# ── Python cache ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+
+# ── Virtual environments ─────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Claude Code local settings ───────────────────────────────
+.claude/
+
+# ── IDE / OS files ───────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+
+# ── Build / distribution ─────────────────────────────────────
+dist/
+build/
+*.egg-info/
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
