@@ -6,6 +6,28 @@ Type a plain-text query. The system searches arXiv, PubMed, bioRxiv, medRxiv, Se
 
 ---
 
+## Why this project exists
+
+One of my work projects involved fine-tuning an LLM for text-to-SQL — part of a
+broader set of applied ML work at my company. The volume of relevant papers has
+grown so fast that keeping up became genuinely unmanageable — not just
+time-consuming, but structurally broken. Downloading PDFs, skimming abstracts,
+deciding what was worth a full read, extracting the methods and results that might
+actually be useful, and then somehow remembering how it all connected — none of
+that scaled.
+
+I started with a bare-bones script to automate the download-and-summarise loop.
+That turned into this: a system that ingests papers from every major open-access
+source, parses them properly (equations and all), writes LLM-maintained synthesis
+pages that cross-reference each other, and answers questions from that compiled
+knowledge rather than re-reading raw PDFs every time.
+
+This grew from a real, daily frustration — not from curiosity about the tech. The
+tech is in service of one goal: spend less time managing papers and more time
+thinking about what they actually mean.
+
+---
+
 ## Architecture overview
 
 ```
