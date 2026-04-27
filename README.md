@@ -463,3 +463,14 @@ All settings live in `config.py`. The table below covers the most commonly chang
 | `WIKI_WRITE_BACK` | `True` | File novel answers back to wiki |
 | `WIKI_LINT_INTERVAL_DAYS` | `7` | Auto-lint interval |
 | `USE_KG` | `False` | Knowledge graph layer (Phase 12, off by default) |
+
+---
+
+## Acknowledgements
+
+The persistent wiki at the heart of this system — where the LLM writes and
+cross-references its own markdown knowledge base that compounds over time — is
+directly inspired by Andrej Karpathy's **LLM-wiki** idea. Rather than
+re-deriving answers from raw chunks on every query, the system accumulates
+compiled synthesis pages that grow more useful with each ingest and each
+answered question. Credit for that core architectural insight goes to him.
