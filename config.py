@@ -162,7 +162,7 @@ class Config:
 
     @classmethod
     def wiki_dir(cls) -> Path:
-        return Path(cls.WIKI_DIR)
+        return Path(cls.WIKI_DIR) / cls.topic_slug()
 
     # ── Directory initialisation ──────────────────────────────────────────
     @classmethod
